@@ -1,7 +1,7 @@
 """
 Creates list of digits from input number, 
-sorts odd and even digits and puts them into original positions 
-by their parity and in descending order 
+sorts odd and even digits and puts them 
+into original positions by their parity and in descending order 
 """
 def largest_number_after_permutation(num):
     digits = list(map(int, str(num)))
