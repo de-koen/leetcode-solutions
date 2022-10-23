@@ -1,3 +1,8 @@
+"""
+Creates list of digits from input number, 
+sorts odd and even digits and puts them into original positions 
+by their parity and in descending order 
+"""
 num = int(input())
 
 digits = list(map(int, str(num)))
