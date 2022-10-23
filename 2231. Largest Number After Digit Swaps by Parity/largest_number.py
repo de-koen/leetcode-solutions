@@ -24,5 +24,5 @@ def largest_number_after_permutation(num):
         else:
             result += str(odd.pop())
             
-    return result
+    return int(result)
             
