@@ -1,14 +1,24 @@
-number = list(str(input()))
+num = int(input())
 
-for i in range(len(number)):
-    maxVal = int(number[i])
-    maxIdx = i
-    for j in range(i + 1, len(number)):
-        if int(number[i]) % 2 == int(number[j]) % 2 and int(number[j]) > maxVal:
-            maxVal = int(number[j])
-            maxIdx = j
-    number[i], number[maxIdx] = number[maxIdx], number[i]
-    
-anwser = ""
+digits = list(map(int, str(num)))
+odd = []
+even = []
 
-print(anwser.join(number))
+for digit in digits:
+        if(digit % 2 == 0):
+            even.append(digit)
+        else:
+            odd.append(digit)
+
+odd.sort()
+even.sort()
+result = ""
+
+for digit in digits:
+        if(digit % 2 == 0):
+            result += str(even.pop())
+        else:
+            result += str(odd.pop())
+            
+print(result)
+            
